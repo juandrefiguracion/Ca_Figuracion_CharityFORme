@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign-up Form for Charity Campaign</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<body>
+	<center>
+	<header>
+		<h1>Sign-up Form for Charity Campaign</h1>
+	</header>
+	<p>Thank you for supporting our charity organization. Your support will help us in our mission to:</p>
+	<ul>
+		<br>
+		<p>Provide education to underprivileged children</p>
+		<p>Feed the homeless</p>
+		<p>Provide medical assistance to those in need</p>
+		<br>
+		<p>Providing education to underprivileged children, feeding the homeless, and providing medical assistance to those in need are crucial to building a more equitable and just society. By supporting these causes, we can create a more compassionate and inclusive world where everyone has the opportunity to thrive.</p>
+	</ul>
+</center>
+	<form id="signupForm" onsubmit="return validateForm()" action="#" method="post">
+		<label for="firstName">First Name*</label>
+		<input type="text" id="firstName" name="firstName" required>
+		<label for="lastName">Last Name*</label>
+		<input type="text" id="lastName" name="lastName" required>
+		<label>Sex*</label>
+		<input type="radio" id="male" name="sex" value="male" required>
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="sex" value="female" required>
+		<label for="female">Female</label>
+		<input type="radio" id="preferNotToSay" name="sex" value="preferNotToSay" required>
+		<label for="preferNotToSay">Prefer not to say</label>
+		<label for="email">Email Address*</label>
+		<input type="email" id="email" name="email" required>
+		<label for="contactNumber">Contact Number</label>
+		<input type="tel" id="contactNumber" name="contactNumber">
+		<div class="error" id="error"></div>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+	</form>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
